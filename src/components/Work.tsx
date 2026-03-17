@@ -7,33 +7,33 @@ const projects = [
   {
     title: "Solid Starters",
     category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
+    tools: "React.js, Node.js, NestJS, MongoDB",
     image: "/images/Solidx.png",
   },
   {
     title: "Radix",
     category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
+    tools: "React.js, Node.js, NestJS, CMS",
     image: "/images/radix.png",
   },
   {
     title: "Bond Cancellation",
     category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
+    tools: "React.js, Node.js, NestJS, Workflows",
     image: "/images/bond.png",
   },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
-  },
+  // {
+  //   title: "Sapphire",
+  //   category: "CRM Platform",
+  //   tools: "React.js, Node.js, NestJS, PostgreSQL",
+  //   image: "/images/sapphire.png",
+  // },
+  // {
+  //   title: "Mpro",
+  //   category: "Insurance Platform",
+  //   tools: "React.js, Node.js ",
+  //   image: "/images/Maxlife.png",
+  // },
 ];
 
 const Work = () => {
@@ -75,7 +75,6 @@ const Work = () => {
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
             aria-label="Previous project"
-            data-cursor="disable"
           >
             <MdArrowBack />
           </button>
@@ -83,7 +82,6 @@ const Work = () => {
             className="carousel-arrow carousel-arrow-right"
             onClick={goToNext}
             aria-label="Next project"
-            data-cursor="disable"
           >
             <MdArrowForward />
           </button>
@@ -132,7 +130,6 @@ const Work = () => {
                   }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
-                data-cursor="disable"
               />
             ))}
           </div>
